@@ -27,16 +27,18 @@
             let mensagem = '';
 
             switch (prioridade) {
-                case 1:
+                case "1":
                         mensagem = `A atividade ${atividade} é urgente`
                         break;
-                case 2:
-                        mensagem = `A atividade ${atividade} é urgente`
+                case "2":
+                        mensagem = `A atividade ${atividade} é importante`
                         break;
-                case 3:
-                        mensagem = `A atividade ${atividade} é urgente`
+                case "3":
+                        mensagem = `A atividade ${atividade} é opcional`
                         break;
             }
+
+            document.getElementById('resultado').innerHTML = mensagem;
         }
     </script>
 </html>
