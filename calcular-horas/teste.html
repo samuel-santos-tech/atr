@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -36,10 +36,7 @@
             let valorHora = parseFloat(document.getElementById('valorHora').value);
             let resultado = document.getElementById('resultado');
 
-            if (horasTrabalhadas <= 0) {
-                resultado.innerHTML = "Erro: O número de horas trabalhadas deve ser maior que zero.";
-                return;
-            }
+            horasTrabalhadas <= 0 ? "Erro: O número de horas trabalhadas deve ser maior que zero." : resultado
 
             let total = horasTrabalhadas * valorHora;
 
@@ -51,4 +48,4 @@
         }
     </script>
 </body>
-</html> -->
+</html>
