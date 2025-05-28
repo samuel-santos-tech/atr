@@ -16,7 +16,7 @@
             <option value="2">Importante</option>
             <option value="3">Opcional</option>
         </select>
-        <button>Classificar</button>
+        <button onclick="classificarTarefa()">Classificar</button>
     </form>
 </body>
 
@@ -26,7 +26,17 @@
             const prioridade = Number(document.getElementById('prioridade').value)
             let mensagem = '';
 
-            switch
+            switch (prioridade) {
+                case 1:
+                        mensagem = `A atividade ${atividade} é urgente`
+                        break;
+                case 2:
+                        mensagem = `A atividade ${atividade} é urgente`
+                        break;
+                case 3:
+                        mensagem = `A atividade ${atividade} é urgente`
+                        break;
+            }
         }
     </script>
 </html>
